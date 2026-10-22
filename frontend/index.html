@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Notes Sharing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <h1>Student Notes</h1>
+        <p>Share notes. Find what you need. Learn together.</p>
+    </header>
+
+    <main class="container">
+        <section class="panel">
+            <h2>Upload Notes</h2>
+
+            <form id="uploadForm">
+                <label for="title">Note title</label>
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Example: Python Basics"
+                    required
+                >
+
+                <label for="subject">Subject</label>
+                <input
+                    type="text"
+                    id="subject"
+                    placeholder="Example: Programming"
+                    required
+                >
+
+                <label for="uploader">Your name</label>
+                <input
+                    type="text"
+                    id="uploader"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="file">Choose a PDF</label>
+                <input
+                    type="file"
+                    id="file"
+                    accept=".pdf,application/pdf"
+                    required
+                >
+
+                <button type="submit" id="uploadButton">Upload Note</button>
+                <p id="uploadMessage" class="message"></p>
+            </form>
+        </section>
+
+        <section class="panel">
+            <div class="notes-heading">
+                <h2>Shared Notes</h2>
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search notes by title or subject..."
+                >
+                <button id="refreshButton" class="secondary">
+                    Refresh
+                </button>
+            </div>
+
+            <p id="listMessage" class="message"></p>
+            <div id="notesList" class="notes-list"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:7071/api";
+const API_URL = "https://student-notes-api-2409-g7aqefesf2gpevgk.eastasia-01.azurewebsites.net/api";
 
 const uploadForm = document.getElementById("uploadForm");
 const uploadMessage = document.getElementById("uploadMessage");

@@ -1,2 +1,0 @@
-# student-cloud-notes
-Project
